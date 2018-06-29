@@ -82,14 +82,7 @@ Time: <?php echo number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms';
 </div>
 </div>
 <?php $this->endBody() ?>
-<script>
-(function(){
-    var bp = document.createElement('script');
-    bp.src = '//push.zhanzhang.baidu.com/push.js';
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
+
 </body>
 </html>
 <?php $this->endPage() ?>
