@@ -39,7 +39,7 @@ if( !$isGuest ) {
 <div style="padding-top: 6px;">
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 <tr>
-<td width="110" align="left"><?=Html::a('<img src="/static/images/logo.png" border="0" align="default" alt="'.$settings['site_name'].' - '.$settings['slogan'].'" width="94" height="30" />', ['/'], ['name'=>'top','class'=>'pjax','title'=>$settings['site_name'].' - '.$settings['slogan']]);?></td>
+<td width="110" align="left"><?=Html::a('<img src="/static/images/yudw.jpg" border="0" align="default" alt="'.$settings['site_name'].' - '.$settings['slogan'].'" width="94" height="30" />', ['/'], ['name'=>'top','class'=>'pjax','title'=>$settings['site_name'].' - '.$settings['slogan']]);?></td>
 <td width="auto" align="left">
 <div id="Search"><form class="navbar-form navbar-left" action="<?=Url::to(['topic/search']);?>" method="get"><div style="width: 276px; height: 28px; background-image: url('/static/images/search.png'); display: inline-block;"><button type="submit"></button><input type="text" maxlength="40" name="q" id="q" value="" /></div></form></div>
 </td>
@@ -78,7 +78,7 @@ if( !$isGuest ) {
 <div class="inner">
 <div class="sep10"></div>
 <div class="fr">
-<a href="https://portal.qiniu.com/signup?code=3lqtwq7wanb6a" target="_blank" title="本站图片空间由七牛云提供"><img src="http://7xrold.com1.z0.glb.clouddn.com/images/qiniu.png" width="100" border="0" alt="本站图片空间由七牛云提供" /></a>
+<img src="/static/images/yudw.jpg" width="100" border="0" alt="yudw" />
 </div>
 <strong>
 <?php
@@ -97,7 +97,11 @@ foreach($single as $page) {
 <div class="sep10"></div>
 <?=$settings['slogan']?>
 <div class="sep20"></div>
-<span class="small fade">Power by <a href="http://simpleforum.org" class="dark" target="_blank"><span class="small gray">SimpleForum <?=SIMPLE_FORUM_VERSION; ?></span></a>，Themes by <a href="http://www.g2ex.com" class="dark" target="_blank"><span class="small gray">龙城男人</span></a>，Design by <a href="http://www.v2ex.com" class="dark" target="_blank"><span class="small gray">OLIVIDA</span></a> &nbsp;  Time: <?=number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?></span>
+<span class="small fade">
+Power by 
+<span class="small gray">SimpleForum <?=SIMPLE_FORUM_VERSION; ?></span>
+ Time: <?=number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?></span>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3790269'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/stat.php%3Fid%3D3790269%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </div>
 </div>
 </div>
@@ -108,6 +112,15 @@ foreach($single as $page) {
 <?=Html::encode($myInfo->mycss)?>
 </style>
 <?php }?>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 </body>
 </html>
 <?php $this->endPage() ?>
