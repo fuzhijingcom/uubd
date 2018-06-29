@@ -65,19 +65,31 @@ $settings = Yii::$app->params['settings'];
 <div class="inner">
 <div class="sep10"></div>
 <div class="fr">
-<a href="https://portal.qiniu.com/signup?code=3lqtwq7wanb6a" target="_blank" title="本站图片空间由七牛云提供"><img src="http://7xrold.com1.z0.glb.clouddn.com/images/qiniu.png" width="100" border="0" alt="DigitalOcean" /></a>
+<img src="/static/images/yudw.jpg" width="100" border="0" alt="yudw" />
 </div>
 <div class="sep20"></div>
 <?php echo $settings['site_name']?>
 <div class="sep10"></div>
 <?php echo $settings['slogan']?>
 <div class="sep20"></div>
-<span class="small fade">Power by <a href="http://simpleforum.org" class="dark" target="_blank"><span class="small gray">SimpleForum <?php echo SIMPLE_FORUM_VERSION; ?></span></a>，Themes by <a href="http://www.g2ex.com" class="dark" target="_blank"><span class="small gray">龙城男人</span></a>，Design by <a href="http://www.v2ex.com" class="dark" target="_blank"><span class="small gray">OLIVIDA</span></a> &nbsp;  Time: <?php echo number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?></span>
+<span class="small fade">
+Power by 
+<span class="small gray">SimpleForum <?php echo SIMPLE_FORUM_VERSION; ?></span>
+Time: <?php echo number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3790269'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/stat.php%3Fid%3D3790269%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</span>
 </div>
 </div>
 </div>
 <?php $this->endBody() ?>
-
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
 </body>
 </html>
 <?php $this->endPage() ?>
