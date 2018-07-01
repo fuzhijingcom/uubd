@@ -8,3 +8,6 @@ upload/*
 
 /core/config/params.php
 /core/runtime
+
+/forum.php
+/home.php
