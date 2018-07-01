@@ -43,7 +43,7 @@ if( !$isGuest ) {
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 <tr>
 <td width="5" align="left"></td>
-<td width="80" align="left" style="padding-top: 4px;"><?=Html::a('<img src="/static/images/logo.png?v=2016" border="0" align="default" alt="'.$settings['site_name'].'" width="80" height="25" />', ['/'], ['name'=>'top','title'=>'G2EX']);?></td>
+<td width="80" align="left" style="padding-top: 4px;"><?=Html::a('<img src="/static/images/yudw.jpg" border="0" align="default" alt="'.$settings['site_name'].'" width="80" height="25" />', ['/'], ['name'=>'top','title'=>'G2EX']);?></td>
 <td width="auto" align="right" style="padding-top: 2px;">
 <?php if(!$isGuest){?>
 <?=Html::a(Html::img('@web/'.str_replace('{size}', 'small',$me->avatar), ['align' => 'absmiddle','style'=>'border-radius: 24px;max-width: 24px; max-height: 24px;']), ['user/view', 'username'=>Html::encode($me->username)]); ?>
@@ -80,15 +80,17 @@ foreach($single as $page) {
     echo Html::a(Html::encode($page['name']), ['page/'.$page['ename']], ['class'=>'dark']),' &nbsp;';
     }
 }
-?><a href="https://portal.qiniu.com/signup?code=3lqtwq7wanb6a" target="_blank" title="本站图片空间由七牛云提供">七牛云存储</a>
+?><a href="https://www.uubd.net/" title="UUBD">UUBD</a>
 </strong>
 </div>
-&copy;  <a href="http://www.g2ex.com"><?=$settings['site_name']?></a>&nbsp; · &nbsp;<?=number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?>
+&copy;  <a href="https://www.uubd.net/"><?=$settings['site_name']?></a>&nbsp; · &nbsp;<?=number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?>
 </div>
 </div>
 </div>
 <?php $this->endBody() ?>
-
+<div style="display:none;">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3790269'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/stat.php%3Fid%3D3790269%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
 </body>
 </html>
 <?php $this->endPage() ?>
