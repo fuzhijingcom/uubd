@@ -5,3 +5,6 @@ upload/*
 .idea
 
 .user.ini
+
+/core/config/params.php
+/core/runtime

@@ -40,3 +40,4 @@ if ( intval(Yii::$app->params['settings']['captcha_enabled']) === 1 ) {
 <?php ActiveForm::end(); ?>
     </div>
 </div>
+

@@ -1,19 +1,19 @@
 <?php
 return [
   'settings' => [
-    'site_name' => 'G2EX',
+    'site_name' => 'UUBD',
     'slogan' => '这是一个学习、探索技术的微社区。',
-    'description' => 'g2ex是一个学习、探索技术的微社区。',
+    'description' => 'UUKD是一个学习、探索技术的微社区',
     'icp' => '',
-    'admin_email' => 'wuji@qq.com',
+    'admin_email' => '',
     'offline' => '0',
     'offline_msg' => '网站维护中，请稍后访问',
     'access_auth' => '0',
     'email_verify' => '0',
     'admin_verify' => '0',
     'close_register' => '0',
-    'username_filter' => 'admin,webmaster,admin*,管理员,站长',
-    'captcha_enabled' => '1',
+    'username_filter' => '',
+    'captcha_enabled' => '0',
     'autolink' => '0',
     'autolink_filter' => [
     ],
@@ -22,26 +22,16 @@ return [
     'groups' => [
       [
         '1500',
-        '普通会员',
-      ],
-      [
-        '3000',
-        '铜牌会员',
-      ],
-      [
-        '5000',
-        '银牌会员',
-      ],
-      [
-        '8000',
-        '金牌会员',
-      ],
-      [
-        '15000',
-        '铂金会员',
-      ],
-      [
-        '100000000',
+        '普通会员
+3000',
+        '铜牌会员
+5000',
+        '银牌会员
+8000',
+        '金牌会员
+15000',
+        '铂金会员
+100000000',
         '管理',
       ],
     ],
@@ -53,11 +43,13 @@ return [
     'editor' => 'WysibbEditor',
     'cache_enabled' => '0',
     'cache_time' => '10',
-    'auth_enabled' => '1',
+    'auth_enabled' => '0',
+    'auth_setting' => [
+    ],
     'index_pagesize' => '20',
     'list_pagesize' => '20',
     'comment_pagesize' => '20',
-    'hot_topic_num' => '5',
+    'hot_topic_num' => '10',
     'hot_node_num' => '20',
     'edit_space' => '30',
     'topic_space' => '30',
@@ -65,15 +57,15 @@ return [
     'alias_static' => '',
     'alias_avatar' => '',
     'alias_upload' => '',
-    'mailer_host' => 'smtp.163.com',
-    'mailer_port' => '25',
+    'mailer_host' => '',
+    'mailer_port' => '0',
     'mailer_encryption' => '',
     'mailer_username' => '',
     'mailer_password' => '',
     'upload_avatar' => 'local',
-    'upload_file' => 'local',
-    'upload_file_regday' => '0',
-    'upload_file_topicnum' => '0',
+    'upload_file' => 'disable',
+    'upload_file_regday' => '30',
+    'upload_file_topicnum' => '20',
     'upload_remote' => '',
   ]
 ];
