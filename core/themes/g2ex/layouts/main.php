@@ -99,7 +99,9 @@ foreach($single as $page) {
 <div class="sep20"></div>
 <span class="small fade">
 Power by 
-<span class="small gray">SimpleForum <?=SIMPLE_FORUM_VERSION; ?></span>
+<span class="small gray">广州琅百广告有限公司 <?=SIMPLE_FORUM_VERSION; ?>
+<a href="http://www.miibeian.gov.cn/">粤ICP备17111635号-5</a>
+</span>
  Time: <?=number_format( (microtime(true) - YII_BEGIN_TIME)*1000) . 'ms'; ?></span>
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_3790269'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/stat.php%3Fid%3D3790269%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </div>
