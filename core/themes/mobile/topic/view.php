@@ -186,7 +186,7 @@ $tags = explode(',', strtolower($topic['tags']));foreach($tags as $tag) {echo Ht
 	echo $form->field(new \app\models\Comment(), 'content')->textArea(['id'=>'editor','class'=>'mll'])->label(false);?>
         <div class="sep5"></div>
         <?=Html::submitButton('添加回复', ['class' => 'super normal button']); ?>
-       <div id="fileuploader">图片上传</div>
+       <!-- <div id="fileuploader">图片上传</div> -->
 <?php if($me->canUpload($settings)) {$editor->registerUploadAsset($this);}?>
 <?php ActiveForm::end(); ?>
     </div>

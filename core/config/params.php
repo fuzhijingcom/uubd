@@ -3,8 +3,8 @@ return [
   'settings' => [
     'site_name' => 'UUBD',
     'slogan' => '这是一个学习、探索技术的微社区。',
-    'description' => 'UUKD是一个学习、探索技术的微社区',
-    'icp' => '',
+    'description' => '广州琅百广告有限公司',
+    'icp' => '粤ICP备17111635号-5',
     'admin_email' => '',
     'offline' => '0',
     'offline_msg' => '网站维护中，请稍后访问',

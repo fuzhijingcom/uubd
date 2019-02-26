@@ -176,6 +176,7 @@ public function actionMembers()
 
     public function actionView($id)
     {
+        
         $topic = Topic::getTopicFromView($id);
         if ( ( intval($topic['node']['access_auth']) === Topic::TOPIC_ACCESS_LOGIN || 
 				intval($topic->access_auth) !== Topic::TOPIC_ACCESS_NONE
